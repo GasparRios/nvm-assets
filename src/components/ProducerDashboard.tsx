@@ -171,7 +171,7 @@ export default function ProducerDashboard() {
               <Leaf className="w-5 h-5 text-[#329F5C]" />
             </div>
             <div>
-              <span className="text-4xl md:text-5xl font-bold text-gray-900 font-mono tracking-tighter">
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 font-mono tracking-tighter break-words">
                 {results ? (
                   <>
                     {(results.currentWeight - results.nvmWeight) > 0 ? '-' : '+'}
@@ -207,7 +207,7 @@ export default function ProducerDashboard() {
               <Gauge className="w-5 h-5 text-[#329F5C]" />
             </div>
             <div>
-              <span className="text-4xl md:text-5xl font-bold text-gray-900 font-mono tracking-tighter">
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 font-mono tracking-tighter break-words">
                 {results ? (
                   <>
                     {(results.nvmSpeed - results.currentSpeed) > 0 ? '+' : ''}
@@ -392,8 +392,8 @@ export default function ProducerDashboard() {
                       Hectáreas Extra por Año
                     </div>
 
-                    <div className="text-7xl lg:text-8xl font-black text-gray-900 mb-4 font-mono tracking-tighter drop-shadow-sm">
-                      <span className="text-[#329F5C] mr-2 text-5xl align-top leading-tight">{results.grandTotal > 0 ? '+' : ''}</span>
+                    <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-4 font-mono tracking-tighter drop-shadow-sm break-words">
+                      <span className="text-[#329F5C] mr-1 md:mr-2 text-4xl md:text-5xl align-top leading-tight">{results.grandTotal > 0 ? '+' : ''}</span>
                       <AnimatedNumber value={results.grandTotal} />
                     </div>
 
