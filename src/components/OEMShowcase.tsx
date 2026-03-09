@@ -100,8 +100,8 @@ export default function OEMShowcase() {
                 style={{ left: '90%' }}
               >
                 <div className="text-center pb-2 md:pb-3">
-                  <p className="text-sm md:text-base font-semibold text-gray-900 tracking-tight">Puntera ZAFE</p>
-                  <p className="text-xs md:text-sm text-gray-500 mt-1 max-w-[140px] leading-snug mx-auto">Zafe bidireccional.</p>
+                  <p className="text-sm md:text-base font-semibold text-gray-900 tracking-tight">Puntera Zafe</p>
+                  <p className="text-xs md:text-sm text-gray-500 mt-1 max-w-[140px] leading-snug mx-auto">Zafe bidireccional y ajustable.</p>
                 </div>
                 <div className="w-px h-8 md:h-12 bg-gradient-to-b from-transparent to-[#0C8346] opacity-40"></div>
                 <div className="w-1.5 h-1.5 rounded-full bg-[#0C8346] shadow-[0_0_8px_rgba(12,131,70,0.8)] mt-1"></div>
