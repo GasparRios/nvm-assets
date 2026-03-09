@@ -139,7 +139,7 @@ export default function OEMShowcase() {
                 <div className="w-px h-8 md:h-12 bg-gradient-to-t from-transparent to-[#0C8346] opacity-40"></div>
                 <div className="text-center pt-2 md:pt-3">
                   <p className="text-sm md:text-base font-semibold text-gray-900 tracking-tight">Fibra de Carbono</p>
-                  <p className="text-xs md:text-sm text-gray-500 mt-1 max-w-[150px] leading-snug mx-auto">11 kg por metro, estructura ultra liviana.</p>
+                  <p className="text-xs md:text-sm text-gray-500 mt-1 max-w-[150px] leading-snug mx-auto">Hasta un 50% mas liviano que el carbono convencional.</p>
                 </div>
               </motion.div>
 
@@ -205,7 +205,7 @@ export default function OEMShowcase() {
                 <div className="w-2 h-2 rounded-full bg-[#0C8346] mt-2 flex-shrink-0 shadow-[0_0_8px_rgba(12,131,70,0.8)]"></div>
                 <div>
                   <p className="text-base font-semibold text-gray-900 tracking-tight">Plug & Play</p>
-                  <p className="text-sm text-gray-500 mt-1">Módulos reemplazables en el lote.</p>
+                  <p className="text-sm text-gray-500 mt-1">Módulos reemplazables en el lote, en tiempo record.</p>
                 </div>
               </motion.div>
 
@@ -234,8 +234,8 @@ export default function OEMShowcase() {
               >
                 <div className="w-2 h-2 rounded-full bg-[#0C8346] mt-2 flex-shrink-0 shadow-[0_0_8px_rgba(12,131,70,0.8)]"></div>
                 <div>
-                  <p className="text-base font-semibold text-gray-900 tracking-tight">Puntera ZAFE</p>
-                  <p className="text-sm text-gray-500 mt-1">Zafe bidireccional.</p>
+                  <p className="text-base font-semibold text-gray-900 tracking-tight">Puntera Zafe</p>
+                  <p className="text-sm text-gray-500 mt-1">Zafe bidireccional y ajustable.</p>
                 </div>
               </motion.div>
             </div>
