@@ -28,7 +28,7 @@ export default function FieldValidation() {
             transition={{ delay: 0.1 }}
             className="text-gray-500 max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed tracking-wide"
           >
-            Llevamos la ingeniería estructural al límite. Observá la absorción de impactos y la agilidad de ensamblaje en tiempo real.
+            Llevamos la ingeniería estructural al límite. Absorción de impactos y agilidad de ensamblaje en tiempo real.
           </motion.p>
         </div>
 
@@ -102,7 +102,7 @@ export default function FieldValidation() {
                 Ensamble inmediato.
               </h3>
               <p className="text-gray-500 text-sm md:text-base leading-relaxed font-medium">
-                Montaje rápido en minutos con solo 4 operarios.
+                Montaje rápido en minutos con solo 4 operarios. Sin grúas ni herramental especial.
               </p>
             </div>
           </motion.div>
@@ -131,10 +131,10 @@ export default function FieldValidation() {
                 </div>
               </div>
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 tracking-tight group-hover:text-[#329F5C] transition-colors">
-                Ingeniería de precisión.
+                Preparado para el futuro.
               </h3>
               <p className="text-gray-500 text-sm md:text-base leading-relaxed font-medium">
-                Geometría optimizada milímetro a milímetro para la máxima exigencia.
+                Diseñado para soportar las nuevas tecnologías. Apto para selectiva, PWM y líneas extra
               </p>
             </div>
           </motion.div>
