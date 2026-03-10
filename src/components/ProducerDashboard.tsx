@@ -127,6 +127,11 @@ export default function ProducerDashboard() {
     return new Intl.NumberFormat('es-AR', { maximumFractionDigits: 0 });
   }, []);
 
+  useEffect(() => {
+    handleCalculate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // Clases CSS Premium para inputs: Bordes suaves y resplandor verde sutil al hacer clic (Física Táctil)
   const premiumInputClass = "w-full bg-white border border-gray-200 rounded-lg p-3 text-gray-900 font-mono focus:border-[#329F5C] focus:ring-4 focus:ring-[#329F5C]/10 outline-none transition-all duration-300 shadow-sm [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [-moz-appearance:textfield]";
 
@@ -389,7 +394,7 @@ export default function ProducerDashboard() {
                     className="w-full"
                   >
                     <div className="text-xs text-gray-500 mb-3 font-bold uppercase tracking-[0.2em]">
-                      Hectáreas Extra por Año
+                      Hectáreas Extra por Año*
                     </div>
 
                     <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-4 font-mono tracking-tighter drop-shadow-sm break-words">
@@ -419,6 +424,10 @@ export default function ProducerDashboard() {
                         </span>
                       </motion.div>
                     </div>
+
+                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="mt-8 text-[10px] leading-relaxed text-gray-400/80 max-w-md mx-auto px-4 text-center font-sans">
+                      * Aviso Legal: Todos los datos técnicos y cálculos de rendimiento mostrados en este sitio son estimaciones teóricas de carácter referencial. El desempeño real está sujeto a variables climáticas, operativas y del terreno. Esta información no constituye garantía de resultados ni oferta vinculante.
+                    </motion.div>
                   </motion.div>
                 )}
               </div>
