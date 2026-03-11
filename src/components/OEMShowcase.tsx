@@ -243,7 +243,7 @@ export default function OEMShowcase() {
           </div>
         </div>
 
-        {/* LLAMADA A LA ACCIÓN (CTA) */}
+        {/* LLAMADA A LA ACCIÓN (CTA) ACTUALIZADA */}
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -251,9 +251,12 @@ export default function OEMShowcase() {
           transition={{ delay: 1.3 }}
           className="flex flex-col items-center justify-center mt-12 gap-3"
         >
-           <Button className="bg-[#111827] text-white hover:bg-black hover:scale-[1.02] transition-all duration-300 px-8 py-6 rounded-2xl text-sm tracking-widest uppercase font-semibold shadow-xl shadow-gray-900/10 border border-gray-800/50">
-              <Download className="mr-2 w-5 h-5" /> Ficha Técnica
-           </Button>
+           {/* El enlace que abre el PDF en una pestaña nueva */}
+           <a href="/Ficha Técnica - NVM36_40.pdf" target="_blank" rel="noopener noreferrer">
+             <Button className="bg-[#111827] text-white hover:bg-black hover:scale-[1.02] transition-all duration-300 px-8 py-6 rounded-2xl text-sm tracking-widest uppercase font-semibold shadow-xl shadow-gray-900/10 border border-gray-800/50">
+                <Download className="mr-2 w-5 h-5" /> Ficha Técnica
+             </Button>
+           </a>
            <p className="text-xs text-gray-400 font-medium tracking-wide">Especificaciones (PDF)</p>
         </motion.div>
 
