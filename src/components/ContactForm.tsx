@@ -30,6 +30,12 @@ export default function ContactForm() {
         mode: 'no-cors' 
       });
       
+      // --- CÓDIGO DE CONVERSIÓN DE GOOGLE ADS ---
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'conversion', {'send_to': 'AW-18005875098/hWWxCLqIg4YcEJqz74lD'});
+      }
+      // ------------------------------------------
+
       setIsSuccess(true);
       form.reset(); // Limpiamos el formulario
       
@@ -82,6 +88,7 @@ export default function ContactForm() {
           <div className="flex justify-center mb-10 md:mb-12">
             <div className="bg-gray-100/80 p-1.5 rounded-2xl inline-flex w-full md:w-auto">
               <button
+                type="button"
                 onClick={() => setActiveTab('producer')}
                 className={`flex-1 md:flex-none px-8 py-3.5 rounded-xl text-sm font-bold transition-all duration-300 ${
                   activeTab === 'producer'
@@ -92,6 +99,7 @@ export default function ContactForm() {
                 Soy Productor
               </button>
               <button
+                type="button"
                 onClick={() => setActiveTab('oem')}
                 className={`flex-1 md:flex-none px-8 py-3.5 rounded-xl text-sm font-bold transition-all duration-300 ${
                   activeTab === 'oem'
