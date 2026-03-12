@@ -268,8 +268,6 @@ export default function ProducerDashboard() {
 
             {/* LADO DERECHO: Resultados (Efecto Glassmorphism / Cristal) */}
             <div className="flex flex-col justify-center items-center relative h-full min-h-[380px] rounded-2xl overflow-hidden group">
-              <div className="absolute top-0 right-0 w-56 h-56 bg-[#329F5C]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-              <div className="absolute bottom-0 left-0 w-56 h-56 bg-[#CCAB76]/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
               
               <div className="absolute inset-0 bg-white/40 backdrop-blur-xl border border-white/60 shadow-[0_8px_32px_0_rgba(31,38,135,0.05)] rounded-2xl z-0" />
 
