@@ -26,8 +26,8 @@ export default function ProductNavBar() {
         />
       </div>
 
-      <div className="w-full flex justify-center pl-16 pr-24 sm:px-0">
-        <ul className="flex items-center gap-2 sm:gap-4 md:gap-10">
+      <div className="w-full flex justify-center pl-14 pr-20 sm:px-0">
+        <ul className="flex items-center gap-0 sm:gap-4 md:gap-10">
           {['diseno', 'rendimiento', 'impacto'].map((id) => {
             const labels: Record<string, string> = {
               'diseno': 'Diseño',
@@ -40,7 +40,7 @@ export default function ProductNavBar() {
               <li key={id}>
                 <button
                   onClick={() => scrollToSection(id)}
-                  className="capitalize font-semibold text-[11px] sm:text-[13px] md:text-[15px] transition-all duration-300 relative tracking-wide px-2 py-1 text-[#329F5C] hover:text-[#0C8346] [text-shadow:_0_1px_12px_rgba(255,255,255,1)]"
+                  className="capitalize font-semibold text-[10px] sm:text-[13px] md:text-[15px] transition-all duration-300 relative tracking-wide px-1 sm:px-2 py-1 text-[#329F5C] hover:text-[#0C8346] [text-shadow:_0_1px_12px_rgba(255,255,255,1)]"
                 >
                   {labels[id]}
                 </button>
