@@ -31,8 +31,8 @@ export default function ContactForm() {
       });
       
       // --- CÓDIGO DE CONVERSIÓN DE GOOGLE ADS ---
-      if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('event', 'conversion', {'send_to': 'AW-18005875098/hWWxCLqIg4YcEJqz74lD'});
+      if (typeof window !== 'undefined' && 'gtag' in window) {
+        (window as any).gtag('event', 'conversion', {'send_to': 'AW-18005875098/hWWxCLqIg4YcEJqz74lD'});
       }
       // ------------------------------------------
 

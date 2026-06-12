@@ -4,7 +4,7 @@ import { Download } from 'lucide-react';
 
 export default function OEMShowcase() {
   return (
-    <section id="oem-showcase" className="py-24 md:py-32 bg-[#FAFAFA] text-gray-900 relative overflow-hidden flex flex-col items-center justify-center min-h-screen">
+    <section id="diseno" className="py-24 md:py-32 bg-[#FAFAFA] text-gray-900 relative overflow-hidden flex flex-col items-center justify-center min-h-screen">
       
       {/* Fondo técnico minimalista estilo Apple */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.012)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.012)_1px,transparent_1px)] bg-[size:40px_40px] opacity-70" />
@@ -20,7 +20,7 @@ export default function OEMShowcase() {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-semibold mb-6 tracking-tight text-gray-900 leading-tight md:leading-tight"
           >
-            El <span className="text-[#0C8346]">nuevo estándar</span> <br className="hidden md:block" />
+            El <span className="text-[#F97316]">nuevo estándar</span> <br className="hidden md:block" />
             en aplicación.
           </motion.h2>
           <motion.p 
@@ -37,8 +37,18 @@ export default function OEMShowcase() {
         {/* ZONA DEL PLANO TÉCNICO (BLUEPRINT) - ESTÉTICA DJI */}
         <div className="relative w-full max-w-6xl mx-auto bg-white/80 backdrop-blur-xl border border-gray-200/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[2.5rem] p-6 md:p-12">
           
-          {/* Etiqueta técnica estilo Badge */}
-          <div className="flex justify-center md:justify-start mb-12 md:mb-16">
+          {/* Area superior: Etiqueta y Título */}
+          <div className="flex flex-col items-start mb-12 md:mb-16 gap-2">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="text-[#329F5C] text-[10px] lg:text-[11px] font-bold tracking-[0.2em] uppercase ml-2 md:ml-5"
+            >
+              SERIE 36
+            </motion.div>
+
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -100,8 +110,8 @@ export default function OEMShowcase() {
                 style={{ left: '90%' }}
               >
                 <div className="text-center pb-2 md:pb-3">
-                  <p className="text-sm md:text-base font-semibold text-gray-900 tracking-tight">Puntera Zafe</p>
-                  <p className="text-xs md:text-sm text-gray-500 mt-1 max-w-[140px] leading-snug mx-auto">Zafe bidireccional y ajustable.</p>
+                  <p className="text-sm md:text-base font-semibold text-gray-900 tracking-tight">Puntera ZAFE</p>
+                  <p className="text-xs md:text-sm text-gray-500 mt-1 max-w-[140px] leading-snug mx-auto">Zafe bidireccional.</p>
                 </div>
                 <div className="w-px h-8 md:h-12 bg-gradient-to-b from-transparent to-[#0C8346] opacity-40"></div>
                 <div className="w-1.5 h-1.5 rounded-full bg-[#0C8346] shadow-[0_0_8px_rgba(12,131,70,0.8)] mt-1"></div>
@@ -139,7 +149,7 @@ export default function OEMShowcase() {
                 <div className="w-px h-8 md:h-12 bg-gradient-to-t from-transparent to-[#0C8346] opacity-40"></div>
                 <div className="text-center pt-2 md:pt-3">
                   <p className="text-sm md:text-base font-semibold text-gray-900 tracking-tight">Fibra de Carbono</p>
-                  <p className="text-xs md:text-sm text-gray-500 mt-1 max-w-[150px] leading-snug mx-auto">Hasta un 50% mas liviano que el carbono convencional.</p>
+                  <p className="text-xs md:text-sm text-gray-500 mt-1 max-w-[150px] leading-snug mx-auto">11 kg por metro, estructura ultra liviana.</p>
                 </div>
               </motion.div>
 
@@ -205,7 +215,7 @@ export default function OEMShowcase() {
                 <div className="w-2 h-2 rounded-full bg-[#0C8346] mt-2 flex-shrink-0 shadow-[0_0_8px_rgba(12,131,70,0.8)]"></div>
                 <div>
                   <p className="text-base font-semibold text-gray-900 tracking-tight">Plug & Play</p>
-                  <p className="text-sm text-gray-500 mt-1">Módulos reemplazables en el lote, en tiempo record.</p>
+                  <p className="text-sm text-gray-500 mt-1">Módulos reemplazables en el lote.</p>
                 </div>
               </motion.div>
 
@@ -234,8 +244,8 @@ export default function OEMShowcase() {
               >
                 <div className="w-2 h-2 rounded-full bg-[#0C8346] mt-2 flex-shrink-0 shadow-[0_0_8px_rgba(12,131,70,0.8)]"></div>
                 <div>
-                  <p className="text-base font-semibold text-gray-900 tracking-tight">Puntera Zafe</p>
-                  <p className="text-sm text-gray-500 mt-1">Zafe bidireccional y ajustable.</p>
+                  <p className="text-base font-semibold text-gray-900 tracking-tight">Puntera ZAFE</p>
+                  <p className="text-sm text-gray-500 mt-1">Zafe bidireccional.</p>
                 </div>
               </motion.div>
             </div>
@@ -243,7 +253,7 @@ export default function OEMShowcase() {
           </div>
         </div>
 
-        {/* LLAMADA A LA ACCIÓN (CTA) ACTUALIZADA */}
+        {/* LLAMADA A LA ACCIÓN (CTA) */}
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -251,12 +261,9 @@ export default function OEMShowcase() {
           transition={{ delay: 1.3 }}
           className="flex flex-col items-center justify-center mt-12 gap-3"
         >
-           {/* El enlace que abre el PDF en una pestaña nueva */}
-           <a href="/Ficha Técnica - NVM36_40.pdf" target="_blank" rel="noopener noreferrer">
-             <Button className="bg-[#111827] text-white hover:bg-black hover:scale-[1.02] transition-all duration-300 px-8 py-6 rounded-2xl text-sm tracking-widest uppercase font-semibold shadow-xl shadow-gray-900/10 border border-gray-800/50">
-                <Download className="mr-2 w-5 h-5" /> Ficha Técnica
-             </Button>
-           </a>
+           <Button className="bg-[#111827] text-white hover:bg-black hover:scale-[1.02] transition-all duration-300 px-8 py-6 rounded-2xl text-sm tracking-widest uppercase font-semibold shadow-xl shadow-gray-900/10 border border-gray-800/50">
+              <Download className="mr-2 w-5 h-5" /> Ficha Técnica
+           </Button>
            <p className="text-xs text-gray-400 font-medium tracking-wide">Especificaciones (PDF)</p>
         </motion.div>
 

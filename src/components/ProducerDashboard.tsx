@@ -137,25 +137,25 @@ export default function ProducerDashboard() {
   const premiumInputClass = "w-full bg-white border border-gray-200 rounded-lg p-2.5 text-gray-900 font-mono focus:border-[#329F5C] focus:ring-4 focus:ring-[#329F5C]/10 outline-none transition-all duration-300 shadow-sm [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [-moz-appearance:textfield]";
 
   return (
-    <section id="producer-dashboard" className="py-16 md:py-20 bg-[#FAFAFA] relative overflow-hidden">
+    <section id="impacto" className="py-16 md:py-20 bg-[#FAFAFA] relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         
         {/* ENCABEZADO */}
-        <div className="mb-8">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-3 text-center md:text-left tracking-tight">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 tracking-tighter leading-tight">
             Impacto productivo real
           </h2>
-          <p className="text-gray-500 max-w-2xl text-center md:text-left text-base md:text-lg">
+          <p className="text-gray-500 max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed tracking-wide">
             Descubrí cuántas hectáreas productivas estás perdiendo al año por culpa del peso, la inestabilidad y las roturas de tu botalón actual.
           </p>
         </div>
 
         {/* LAYOUT: Calculadora a Ancho Completo */}
-        <Card className="w-full bg-white border border-gray-100 shadow-xl rounded-3xl relative overflow-hidden">
+        <Card className="w-full max-w-6xl mx-auto bg-white border border-gray-100 shadow-xl rounded-3xl relative overflow-hidden">
           <div className="bg-gray-50/80 backdrop-blur-sm border-b border-gray-100 p-4 flex justify-between items-center">
             <div className="flex items-center gap-3">
               <div className="p-1.5 bg-white rounded-lg shadow-sm border border-gray-100">
-                <Calculator className="w-4 h-4 text-[#329F5C]" />
+                <Calculator className="w-4 h-4 text-[#F97316]" />
               </div>
               <span className="text-sm font-bold text-gray-700 uppercase tracking-widest">
                 Simulador Agronómico
@@ -251,7 +251,7 @@ export default function ProducerDashboard() {
                 <motion.div whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.98 }}>
                   <Button
                     onClick={handleCalculate}
-                    className="w-full bg-gray-900 hover:bg-black text-white font-bold py-4 rounded-xl text-xs tracking-widest uppercase transition-colors shadow-md shadow-gray-900/20"
+                    className="w-full bg-[#F97316] hover:bg-[#d95d08] text-white font-bold py-4 rounded-xl text-xs tracking-widest uppercase transition-colors shadow-md shadow-[#F97316]/20"
                   >
                     Calcular Impacto
                   </Button>

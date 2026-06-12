@@ -3,7 +3,7 @@ import { Activity, Zap, Maximize } from 'lucide-react';
 
 export default function FieldValidation() {
   return (
-    <section id="field-validation" className="py-24 md:py-32 bg-[#FAFAFA] relative overflow-hidden">
+    <section id="rendimiento" className="py-24 md:py-32 bg-[#FAFAFA] relative overflow-hidden">
       
       {/* Fondo sutil claro */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.012)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.012)_1px,transparent_1px)] bg-[size:40px_40px] opacity-70" />
@@ -28,7 +28,7 @@ export default function FieldValidation() {
             transition={{ delay: 0.1 }}
             className="text-gray-500 max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed tracking-wide"
           >
-            Llevamos la ingeniería estructural al límite. Absorción de impactos y agilidad de ensamblaje en tiempo real.
+            Llevamos la ingeniería estructural al límite. Observá la absorción de impactos y la agilidad de ensamblaje en tiempo real.
           </motion.p>
         </div>
 
@@ -93,16 +93,16 @@ export default function FieldValidation() {
 
             <div className="p-8 md:p-10 flex flex-col flex-grow justify-center">
               <div className="flex items-center gap-2 mb-4">
-                <div className="bg-[#CCAB76]/10 text-[#CCAB76] px-3 py-1.5 rounded-full text-[10px] md:text-xs font-bold tracking-widest uppercase flex items-center gap-2 w-max">
+                <div className="bg-[#329F5C]/10 text-[#329F5C] px-3 py-1.5 rounded-full text-[10px] md:text-xs font-bold tracking-widest uppercase flex items-center gap-2 w-max">
                   <Zap className="w-3 h-3 md:w-4 md:h-4" />
                   Plug & Play
                 </div>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 tracking-tight group-hover:text-[#CCAB76] transition-colors">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 tracking-tight group-hover:text-[#329F5C] transition-colors">
                 Ensamble inmediato.
               </h3>
               <p className="text-gray-500 text-sm md:text-base leading-relaxed font-medium">
-                Montaje rápido en minutos con solo 4 operarios. Sin grúas ni herramental especial.
+                Montaje rápido en minutos con solo 4 operarios.
               </p>
             </div>
           </motion.div>
@@ -127,14 +127,14 @@ export default function FieldValidation() {
               <div className="flex items-center gap-2 mb-4">
                 <div className="bg-[#329F5C]/10 text-[#329F5C] px-3 py-1.5 rounded-full text-[10px] md:text-xs font-bold tracking-widest uppercase flex items-center gap-2 w-max">
                   <Maximize className="w-3 h-3 md:w-4 md:h-4" />
-                  Listo para AGTECH
+                  Peso Pluma
                 </div>
               </div>
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 tracking-tight group-hover:text-[#329F5C] transition-colors">
-                Preparado para el futuro.
+                Ingeniería de precisión.
               </h3>
               <p className="text-gray-500 text-sm md:text-base leading-relaxed font-medium">
-                Diseñado para soportar las nuevas tecnologías. Apto para selectiva, PWM y líneas extra
+                Geometría optimizada milímetro a milímetro para la máxima exigencia.
               </p>
             </div>
           </motion.div>
