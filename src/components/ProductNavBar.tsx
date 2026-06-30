@@ -17,7 +17,7 @@ export default function ProductNavBar() {
       {/* Logo Container (Left) */}
       <div className="absolute left-4 sm:left-6 flex items-center gap-2 z-10">
         <img 
-          src="https://raw.githubusercontent.com/GasparRios/nvm-assets/main/1 - Logo estandar.png"
+          src="/logo-estandar.png"
           alt="NVM Composites"
           className="h-5 sm:h-8 object-contain brightness-0"
           onError={(e) => {
