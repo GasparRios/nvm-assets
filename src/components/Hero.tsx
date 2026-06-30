@@ -18,7 +18,6 @@ export default function Hero() {
     alt="Carbon fiber"
     className="w-full h-full object-cover"
   />
-  <div className="absolute inset-0 bg-gradient-to-l from-white/90 via-white/20 to-transparent" />
   <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent md:hidden" />
 </div>
 
