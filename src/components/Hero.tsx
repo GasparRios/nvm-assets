@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Background Image */}
 <div className="absolute inset-0 z-0">
   <img
-    src="https://raw.githubusercontent.com/GasparRios/nvm-assets/2f52cad64e80664a0da76b1797fc24219550cf51/Render3White.png" 
+    src="https://raw.githubusercontent.com/GasparRios/nvm-assets/178852f4b480a2fd7ccf1b818ae4220a6a2e4370/RenderWhiteFull.png" 
     alt="Carbon fiber"
     className="w-full h-full object-cover"
   />
