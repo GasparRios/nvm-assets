@@ -14,11 +14,12 @@ export default function Hero() {
       {/* Background Image */}
 <div className="absolute inset-0 z-0">
   <img
-    src="https://raw.githubusercontent.com/GasparRios/nvm-assets/92bad593cd5e3a2770bde9bdab647f80fe95fd07/RenderChat.png" 
+    src="/RenderWhiteFull.jpg"
     alt="Carbon fiber"
     className="w-full h-full object-cover"
   />
-  <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent md:hidden" />
+  {/* Fade-out hacia el gris-blanco (#FAFAFA) de las secciones siguientes: funde el hero sin corte visible */}
+  <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-b from-transparent via-[#FAFAFA]/40 to-[#FAFAFA] pointer-events-none" />
 </div>
 
       {/* Main Content - Bottom Right */}
